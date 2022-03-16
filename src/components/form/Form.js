@@ -12,7 +12,7 @@ const Form = () => {
     input: {
       height:"62px",
       width:"463px",
-      // endIcon: <FiPaperclip/>,
+      
     }
   })
 
@@ -20,10 +20,10 @@ const Form = () => {
 
   const txt = useStyles();
 
-  const icon = () => {
+  // const icon = () => {
     
-     (Grid === false) ?  <FiPaperclip/> : <FiX/> ;
-  }
+  //    (Grid === false) ?  <FiPaperclip/> : <FiX/> ;
+  // }
 
   return (
     <Grid container backgroundColor="#e5e5e5" minHeight = "100vh" justifyContent="center">
@@ -32,7 +32,7 @@ const Form = () => {
             <Typography color="#676767" lineHeight="16px" marginLeft="34px" marginTop="50px">Upload your Picture</Typography>
             <Grid  marginLeft="34px" marginTop="12px" >
               <TextField className={txt.input} label="Choose Image" id="outlined-basic" variant="outlined" />
-              <span className="clip">{icon}</span>
+              <span className="clip">{<FiPaperclip/>}</span>
             </Grid>
           <Grid display="flex" marginTop="28px">
                

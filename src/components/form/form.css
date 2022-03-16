@@ -39,3 +39,8 @@
     margin-left: 186px;
     margin-top: 90px;
 }
+.clip {
+    position: relative;
+    right: 2rem;
+    top: 1.2rem;
+}
