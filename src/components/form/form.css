@@ -1,0 +1,29 @@
+.fill {
+    border-radius: 8px;
+    height: 62px;
+    width: 463px;
+    margin-left: 34px !important;
+}
+
+.fie {
+    margin-left: 32px !important; 
+    height:111px !important; 
+    width:463px ;
+    margin-top: 3px !important;
+}
+
+
+.btn{
+    background-color: #ff5c00 !important;
+    color: white !important;
+    font-weight: bold !important;
+    height: 70px;
+    width: 253px;
+    border-radius: 8px;
+    margin-top: 60px !important;
+    margin-left: 250px !important;
+}
+
+.Hove:hover {
+        color: #ff5c00 !important;
+}
