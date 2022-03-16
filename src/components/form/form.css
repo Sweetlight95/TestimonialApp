@@ -24,6 +24,18 @@
     margin-left: 250px !important;
 }
 
-.Hove:hover {
-        color: #ff5c00 !important;
+.btn1{
+    background-color: #ff5c00 !important;
+    color: white !important;
+    font-weight: bold !important;
+    height: 70px;
+    width: 253px;
+    border-radius: 8px;
+    margin-left:140px !important;
+    margin-top: 60px !important;
+
+}
+.img {
+    margin-left: 186px;
+    margin-top: 90px;
 }

@@ -2,7 +2,9 @@ import React from 'react'
 import { Grid, Typography, Button, TextField, FormControlLabel, RadioGroup, Radio} from '@mui/material'
 import './form.css'
 import { makeStyles } from '@mui/styles'
-import { FiPaperclip } from '@react-icons/fi'
+import { FiPaperclip, FiX } from 'react-icons/fi'
+import {useNavigate} from 'react-router-dom'
+
 
 const Form = () => {
 
@@ -10,19 +12,27 @@ const Form = () => {
     input: {
       height:"62px",
       width:"463px",
+      // endIcon: <FiPaperclip/>,
     }
   })
 
+  const navigate = useNavigate();
+
   const txt = useStyles();
 
+  const icon = () => {
+    
+     (Grid === false) ?  <FiPaperclip/> : <FiX/> ;
+  }
 
   return (
-    <Grid container backgroundColor="black" minHeight = "100vh" justifyContent="center">
-        <Grid item backgroundColor="#ffffff" borderRadius="16px" height="829px" width="527px" marginTop="2rem">
+    <Grid container backgroundColor="#e5e5e5" minHeight = "100vh" justifyContent="center">
+        <Grid item backgroundColor="#ffffff" borderRadius="16px" height="829px" width="527px" marginTop="1rem">
             <Typography fontSize="28px" fontWeight="bold" marginLeft="66px" marginTop="57px">Share your amazing story!</Typography>
             <Typography color="#676767" lineHeight="16px" marginLeft="34px" marginTop="50px">Upload your Picture</Typography>
-            <Grid  marginLeft="34px" marginTop="12px" leftIcon={<FiPaperclip/>}>
+            <Grid  marginLeft="34px" marginTop="12px" >
               <TextField className={txt.input} label="Choose Image" id="outlined-basic" variant="outlined" />
+              <span className="clip">{icon}</span>
             </Grid>
           <Grid display="flex" marginTop="28px">
                
@@ -54,7 +64,7 @@ const Form = () => {
       <Typography color="#676767" lineHeight="16px" marginLeft="34px" position="relative"bottom="28px">What did you interact with Vasiti as? </Typography>
             <Typography color="#676767" lineHeight="16px" marginLeft="34px" position="relative"bottom="15px" >City or Higher Institution(for Students</Typography>
             <TextField className='fill' />
-          <Button className="btn" >
+          <Button className="btn" onClick={()=>navigate("/congratulation")}>
                 Share your story!
           </Button>
         </Grid>
