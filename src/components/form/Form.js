@@ -20,11 +20,6 @@ const Form = () => {
 
   const txt = useStyles();
 
-  // const icon = () => {
-    
-  //    (Grid === false) ?  <FiPaperclip/> : <FiX/> ;
-  // }
-
   return (
     <Grid container backgroundColor="#e5e5e5" minHeight = "100vh" justifyContent="center">
         <Grid item backgroundColor="#ffffff" borderRadius="16px" height="829px" width="527px" marginTop="1rem">

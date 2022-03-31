@@ -6,11 +6,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path= "/testimonial1" element={ <Form />}/>
+        <Route path= "/" element={ <Form />}/>
         <Route path= "/congratulation" element={ <Congratulation />}/>
 
       </Routes>
-       
     </div>
   );
 }

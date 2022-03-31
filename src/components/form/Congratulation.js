@@ -15,7 +15,7 @@ const Congratulation = () => {
           </Grid>
           <Button className="btn1" >
                 Close
-          </Button>
+          </Button> 
     </Grid>
     </Grid>
    
